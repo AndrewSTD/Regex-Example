@@ -12,7 +12,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-h1, h2 {
+h1, h2, h5 {
     text-align: center;
 }
 
@@ -20,7 +20,7 @@ h1, h2 {
     margin-bottom: 20px;
 }
 
-label {
+label, h5 {
     display: block;
     margin-bottom: 5px;
 }

@@ -1,12 +1,20 @@
 // script.js
 
 function matchPattern() {
+    var isValid = true;
+try {
+    new RegExp("/[");
+} catch(e) {
+    isValid = false;
+}
+
+if(!isValid) alert("Invalid regular expression");
     let input = document.getElementById("input").value;
     let pattern = document.getElementById("pattern").value;
 
     // check if pattern is valid
     try {
-        new RegExp(pattern);
+        let match1 = input.match(pattern);
     } catch (error) {
         document.getElementById("result").innerHTML = error.message;
         return;
